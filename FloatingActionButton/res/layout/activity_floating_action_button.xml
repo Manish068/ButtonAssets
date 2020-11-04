@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/floatingActionActivityBg"
+    android:padding="@dimen/_10sdp"
+    tools:context=".view.activity.ButtonAnimationExamples.floatingActionButton.FloatingActionButton">
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_8sdp"
+        app:fab_addButtonColorNormal="@color/floatingButtonGreen"
+        app:fab_addButtonColorPressed="@color/floatingButtonRippleColor"
+        app:fab_expandDirection="down"
+        app:fab_labelStyle="@style/LabelStyle"
+        app:fab_labelsPosition="right">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@color/floatingButtonRippleColor"
+            app:fab_size="mini"
+            app:fab_title="Label on the right" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@color/floatingButtonRippleColor"
+            app:fab_title="Label on the right" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:elevation="@dimen/_8sdp"
+        app:fab_addButtonColorNormal="@color/floatingButtonGreen"
+        app:fab_addButtonColorPressed="@color/floatingButtonRippleColor"
+        app:fab_expandDirection="left"
+        app:fab_labelsPosition="right" />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@android:color/white"
+        app:fab_colorPressed="@color/floatingButtonRippleColor"
+        app:fab_size="mini" />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@android:color/white"
+        app:fab_colorPressed="@color/floatingButtonRippleColor"
+        app:fab_size="mini" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:elevation="@dimen/_8sdp"
+        app:fab_addButtonColorNormal="@color/floatingButtonGreen"
+        app:fab_addButtonColorPressed="@color/floatingButtonRippleColor"
+        app:fab_expandDirection="up"
+        app:fab_labelStyle="@style/LabelStyle"
+        app:fab_labelsPosition="left">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@color/floatingButtonRippleColor"
+            app:fab_icon="@drawable/ic_play"
+            app:fab_size="normal"
+            app:fab_title="Play Video" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@color/floatingButtonRippleColor"
+            app:fab_icon="@drawable/ic_code"
+            app:fab_title="Coding" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:elevation="@dimen/_8sdp"
+        app:fab_addButtonColorNormal="@color/floatingButtonGreen"
+        app:fab_addButtonColorPressed="@color/floatingButtonRippleColor"
+        app:fab_expandDirection="right">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@color/floatingButtonRippleColor"
+            app:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@color/floatingButtonRippleColor"
+            app:fab_size="mini" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backButton"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/floatingButtonGreen"
+        android:drawableRight="@drawable/ic_round_arrow_back_24"
+        android:drawablePadding="@dimen/_2sdp"
+        android:elevation="@dimen/_5sdp"
+        app:cornerRadius="@dimen/_200sdp" />
+
+
+</RelativeLayout>

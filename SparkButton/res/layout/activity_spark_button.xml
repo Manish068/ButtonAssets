@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/SparkButtonBackGround"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    tools:context=".view.activity.ButtonAnimationExamples.SparkButton.SparkButton">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EEEAF3"
+        app:cardCornerRadius="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#DFD6E9"
+                app:cardCornerRadius="@dimen/_15sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/loremipsum"
+                    android:textColor="#5E2F8F" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.varunest.sparkbutton.SparkButton
+                android:id="@+id/star_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:sparkbutton_activeImage="@drawable/ic_star_on"
+                app:sparkbutton_animationSpeed=".85"
+                app:sparkbutton_iconSize="20dp"
+                app:sparkbutton_inActiveImage="@drawable/ic_star_off" />
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:backgroundTint="#EEEAF3"
+        app:cardCornerRadius="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="@dimen/_4sdp">
+
+                <ImageView
+                    android:id="@+id/iv_imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/revolt_nike_shoe"
+                    android:contentDescription="@string/app_name"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik"
+                        android:text="@string/alejandro_escamilla"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <com.varunest.sparkbutton.SparkButton
+                        android:id="@+id/heart_button"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="start"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        app:sparkbutton_activeImage="@drawable/ic_heart"
+                        app:sparkbutton_animationSpeed=".80"
+                        app:sparkbutton_iconSize="20dp"
+                        app:sparkbutton_inActiveImage="@drawable/ic_heart_off"
+                        app:sparkbutton_primaryColor="@color/heart_primary_color"
+                        app:sparkbutton_secondaryColor="@color/heart_secondary_color" />
+
+
+                    <com.varunest.sparkbutton.SparkButton
+                        android:id="@+id/facebook_button"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        app:sparkbutton_activeImage="@drawable/ic_thumb"
+                        app:sparkbutton_animationSpeed=".85"
+                        app:sparkbutton_iconSize="20dp"
+                        app:sparkbutton_primaryColor="@color/facebook_primary_color"
+                        app:sparkbutton_secondaryColor="@color/facebook_secondary_color" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:backgroundTint="#EEEAF3"
+        app:cardCornerRadius="@dimen/_20sdp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal">
+
+            <com.varunest.sparkbutton.SparkButton
+                android:id="@+id/twitter_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:clickable="false"
+                app:sparkbutton_activeImage="@drawable/ic_twitter"
+                app:sparkbutton_iconSize="30dp"
+                app:sparkbutton_pressOnTouch="false"
+                app:sparkbutton_primaryColor="@color/twitter_primary_color"
+                app:sparkbutton_secondaryColor="@color/twitter_secondary_color" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/twitter_layout_text"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:lines="2"
+            android:text="@string/go_back_for_source_code"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_16ssp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:backgroundTint="#DFD6E9"
+            android:drawableTint="#5E2F8F"
+            android:drawableEnd="@drawable/ic_round_arrow_back_24"
+            android:drawablePadding="@dimen/_2sdp"
+            android:elevation="@dimen/_5sdp"
+            app:cornerRadius="@dimen/_200sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    
+    <style name="LabelStyle">
+        <item name="android:background">@drawable/label_background</item>
+        <item name="android:textColor">@color/floatingButtonGreen</item>
+        <item name="rippleColor">@color/floatingButtonGreen</item>
+    </style>
+
+</resources>
